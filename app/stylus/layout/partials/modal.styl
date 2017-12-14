@@ -1,0 +1,15 @@
+@import '../../utilities/vars'
+@import '../../utilities/mixins'
+
+.fancybox-slide > div
+  width 100%
+  max-width 1170px
+  padding 2rem 0
+  +tablet()
+    max-width 960px
+  +portrait()
+    max-width 720px
+  +fablet()
+    max-width 540px
+  +mobile()
+    max-width calc(100% - 30px)

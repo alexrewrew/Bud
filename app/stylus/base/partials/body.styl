@@ -1,0 +1,77 @@
+@import '../../utilities/vars'
+@import '../../utilities/mixins'
+
+html
+  overflow-x hidden
+
+body
+  overflow-x hidden
+  font(1rem, $black, 400, normal)
+  background-image: linear-gradient(-244deg, #ee2e24, #570b07);
+  background-repeat no-repeat
+  background-size cover
+  min-height 100vh
+
++displays()
+  .container
+    max-width 1200px
+
+
+.counter-block
+  background-image: linear-gradient(to bottom, #4f4f4f, #000000);
+  box-shadow: 0 7px 29px 0 rgba(0, 0, 0, 0.38);
+  border: solid 14px #ffffff;
+  margin 51px 0 50px
+  min-height 243px
+  overflow hidden
+  +tablet()
+    min-height: 230px;
+  +portrait()
+    min-height: 200px;
+  +mobile()
+    min-height: 157px;
+
+#counter
+  display flex
+  justify-content center
+  transform: scale(2.1);
+  position: relative;
+  left: -10px;
+  padding-top 28px
+  +tablet()
+    transform: scale(1.65);
+  +portrait()
+    transform: scale(1.4);
+    padding-top 18px
+  +mobile()
+    transform: scale(.95);
+    padding-top 0
+
+.flip-clock-wrapper ul:nth-child(3)
+  margin-right 29px
+  position relative
+  &:after
+    content ','
+    display block
+    position absolute
+    color $white
+    right -30px
+    +mobile()
+      display none
+  +mobile()
+    margin-right 5px
+
+.flip-clock-wrapper ul li a div.up div.inn, .flip-clock-wrapper ul li a div.down div.inn
+  color $white
+  +mobile()
+    font-size 50px
+
+.img-bud
+  display block
+  margin 0 auto
+  +tablet()
+    width 100%
+  +portrait()
+    width 100%
+  +mobile()
+    width 100%

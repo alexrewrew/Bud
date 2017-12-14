@@ -1,0 +1,84 @@
+//left-right menu
+.nav-panel
+  .menu
+    li.dropdown
+      position relative
+      transitions()
+      .dropdown-link
+        position relative
+        z-index 400
+      ul
+        position absolute
+        min-width 200px
+        width 100%
+        padding 1rem
+        background $white
+        left 0
+        top 20px
+        z-index -300
+        opacity 0
+        visibility hidden
+        pointer-events none
+        transitions()
+        +mobile()
+          display none
+
+    li.dropdown.active
+      ul
+        opacity 1
+        z-index 300
+        visibility visible
+        pointer-events auto
+        +mobile()
+          position static
+          display block
+
++mobile()
+  body
+    padding-top 50px
+
+  nav
+    position fixed
+    left 0
+    right 0
+    top 0
+    z-index 200
+    .container
+      max-width unset
+
+  .nav-panel
+    display block
+    position fixed
+    top 0
+    left calc(100vw) !important
+    right 0
+    bottom 0
+    z-index 200
+    height 100vh
+    width: calc(100vw - 60px)
+    padding: 0
+    transitions()
+
++landscape()
+  .nav-panel
+    display flex
+    justify-content center
+    align-items center
+    .menu
+      flex-direction row
+      flex-wrap wrap
+      li
+        flex 1 1 50%
+        max-width 50%
+
+body.open
+  main
+    transform translateX(calc(-100vw + 60px))
+
+  nav
+    transform translateX(calc(-100vw + 60px))
+
+  .nav-panel
+    +mobile()
+      transform translate(calc(-100vw + 60px))
+      background $white

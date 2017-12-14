@@ -1,0 +1,15 @@
+{
+  "name": "chosen-image",
+  "homepage": "https://github.com/djgrant/chosen-image",
+  "version": "0.9.9",
+  "_release": "0.9.9",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.9.9",
+    "commit": "86768f8993d456c3b9567af33332897503ae6985"
+  },
+  "_source": "https://github.com/djgrant/chosen-image.git",
+  "_target": "^0.9.9",
+  "_originalSource": "https://github.com/djgrant/chosen-image.git",
+  "_direct": true
+}

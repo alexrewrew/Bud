@@ -1,0 +1,19 @@
+@import '../../utilities/vars'
+@import '../../utilities/mixins'
+
+.ui-tabs
+  .ui-tabs-nav
+    display flex
+    flex-direction row
+    justify-content space-between
+    li
+      a
+        padding 1rem
+        display block
+        color $black
+        &:hover
+          background $gray
+    .ui-tabs-active.ui-state-active
+      a
+        background $black
+        color $white

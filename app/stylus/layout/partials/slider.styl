@@ -1,0 +1,75 @@
+@import '../../utilities/vars'
+@import '../../utilities/mixins'
+
+.slick-loading .slick-list
+  background: #fff url('../img/slick/ajax-loader.gif') center center no-repeat;
+
+@font-face
+  font-family: 'slick';
+  font-weight: normal;
+  font-style: normal;
+  src: url('../fonts/slick/slick.eot');
+  src: url('../fonts/slick/slick.eot?#iefix') format('embedded-opentype'), url('../fonts/slick/slick.woff') format('woff'), url('../fonts/slick/slick.ttf') format('truetype'), url('../fonts/slick/slick.svg#slick') format('svg');
+
+
+
+
+.slider
+  position relative
+  overflow hidden
+  margin-bottom 1rem
+  .arrow
+    position absolute
+    text-align center
+    z-index 100
+    top 41%
+    cursor pointer
+    .fa
+      font-size 2rem
+
+  .arrow.left
+    left 0
+  .arrow.right
+    right 0
+
+  .slide
+    display flex
+    justify-content center
+    align-items center
+    height 100%
+    overflow hidden
+    margin 0 15px
+    &:focus
+      outline none
+
+  .slider-counter
+    position absolute
+    z-index 100
+    right 0
+    bottom 0
+    font-size 3em
+
+
+  .slick-dots
+    bottom 0
+    left 0
+    right 0
+    position absolute
+    display flex
+    flex-direction row
+    justify-content center
+    li
+      margin 5px
+      button
+        padding 0
+        width 15px
+        height 15px
+        border-radius 50%
+        background $gray
+        color $trans
+        &:hover
+          background $black
+          opacity .6
+    .slick-active
+      button
+        background $black

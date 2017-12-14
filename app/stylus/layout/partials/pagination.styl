@@ -1,0 +1,19 @@
+@import '../../utilities/vars'
+@import '../../utilities/mixins'
+
+.pagination
+  list-flex(row)
+  justify-content space-between
+  max-width 25%
+  margin 0 auto
+  li
+    a
+      display block
+      color $black
+      font-size 1.25em
+      &:hover
+        color $gray
+    .active
+      color $gray
+      cursor default
+      pointer-events: none;

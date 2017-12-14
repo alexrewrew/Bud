@@ -1,0 +1,57 @@
+.chosen-container
+  width 100%
+  margin-bottom 1rem
+  font-size 1em
+  &:after
+    triangle($black, down, 6px)
+    top calc(50% - 3px)
+    right 15px
+    transitions()
+  &:focus
+    outline none
+  .chosen-single
+    padding 11px 15px 12px
+    height 45px
+    border-radius 0
+    border 1px solid $black
+    background none
+    box-shadow none
+
+.chosen-container-single .chosen-search
+  padding 0
+  input[type='text']
+    border 0
+    padding 11px 15px 12px
+    background-image none !important
+
+.chosen-container.chosen-with-drop
+  &:after
+    transform rotate(180deg)
+
+.chosen-container.chosen-container-active
+  box-shadow none
+  .chosen-single
+    box-shadow none
+    border 1px solid $black
+    background none
+
+
+.chosen-container-single .chosen-drop
+  border-radius 0
+  border 1px solid $black
+  border-top 0
+  padding 0
+  box-shadow none
+  .chosen-results
+    padding 0
+    margin 0
+    box-shadow none
+    .active-result
+      padding 11px 15px 12px
+    .active-result.highlighted
+      background $gray
+
+
+
+.chosen-container-single .chosen-single div b
+  display none

@@ -1,0 +1,21 @@
+@import '../../utilities/vars'
+@import '../../utilities/mixins'
+
+blockquote
+  padding 1rem
+  position relative
+  &:before
+    content open-quote
+    position absolute
+    display block
+    left 0
+    top 0
+    line-height 1
+
+  &:after
+    content close-quote
+    position absolute
+    display block
+    right 0
+    bottom 0
+    line-height 1

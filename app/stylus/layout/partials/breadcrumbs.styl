@@ -1,0 +1,30 @@
+@import '../../utilities/vars'
+@import '../../utilities/mixins'
+
+.breadcrumbs
+  list-flex(row)
+  margin-bottom 1rem
+  li
+    position relative
+    padding-right 1rem
+    margin-right 1rem
+    &:after
+      pseudo(block, absolute)
+      right 0
+      top 0
+      height 100%
+      width 1px
+      background $black
+      transform rotate(25deg)
+    &:last-child
+      &:after
+        display none
+    a
+      display block
+      color $black
+      &:hover
+        color $gray
+    .active
+      cursor default
+      pointer-events: none;
+      color $gray

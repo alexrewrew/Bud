@@ -1,0 +1,30 @@
+{
+  "name": "template",
+  "version": "1.0.0",
+  "description": "volta gulp template",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.18.13",
+    "eslint": "^4.6.1",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-clean": "^0.3.2",
+    "gulp-clean-css": "^3.9.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-csscomb": "^3.0.8",
+    "gulp-data": "^1.2.1",
+    "gulp-html-minifier": "^0.1.8",
+    "gulp-imagemin": "^3.4.0",
+    "gulp-notify": "^3.0.0",
+    "gulp-pug": "^3.3.0",
+    "gulp-stylus": "^2.6.0",
+    "gulp-uglify": "^3.0.0",
+    "rimraf": "^2.6.2",
+    "run-sequence": "^2.2.0"
+  }
+}

@@ -1,0 +1,85 @@
+@import '../../utilities/vars'
+@import '../../utilities/mixins'
+
+//MAIN
+body
+  padding-top 80px
+
+//NAVIGATION
+nav
+  background lightblue
+  position fixed
+  top 0
+  left 0
+  right 0
+  z-index 999
+  padding 15px 0
+
+section
+  padding 120px 0 130px
+
+//LINK1
+#link1
+  background lightgrey
+  height calc(100vh - 80px)
+  display flex
+  align-items center
+
+#link2
+  background lightcoral
+
+#link3
+  padding 0
+
+#link4
+  background $white
+  .slider-full
+    height 400px
+    .arrow
+      .fa
+        font-size 4.5rem
+  .slide
+    height 400px
+
+#link5
+  background lightcyan
+
+#link6
+  background lightgoldenrodyellow
+
+.button
+  border-radius 30px
+  margin 0 auto 1rem
+
+.form-subscribe
+  display flex
+  align-items center
+  justify-content space-between
+  .button
+    border-radius 0
+    border 1px solid $black
+    flex 1 1 38%
+    max-width 38%
+    margin 0 0 1em
+  input
+    flex 1 1 58%
+    max-width 58%
+
+.slider-full
+  height 600px
+  .arrow
+    .fa
+      font-size 8rem
+  .slide
+    height 600px
+
+.gallery
+  list-flex(row)
+  flex-wrap wrap
+  justify-content space-between
+  .gallery-item
+    flex 1 1 calc(33.33333% - 20px)
+    max-width calc(33.33333% - 20px)
+    margin 1rem 0
+    img
+      width 100%

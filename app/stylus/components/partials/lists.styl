@@ -1,0 +1,47 @@
+@import '../../utilities/vars'
+@import '../../utilities/mixins'
+
+ul
+  padding 0
+  margin 0
+  li
+    list-style none
+
+ol
+  padding 0
+  margin 0
+
+.ul-regular
+  li
+    padding-left 1rem
+    position relative
+    margin-bottom 1rem
+    &:before
+      pseudo(block, absolute)
+      width 8px
+      height 2px
+      background $black
+      top 9px
+      left 0
+
+.ul-filter
+  list-flex(row)
+  margin-bottom 1rem
+  justify-content center
+  li
+    margin 1rem
+    a
+      padding 1rem
+      background $black
+      color $white
+      &:hover
+        color $black
+        background $gray
+    .active
+      color $black
+      background $gray
+
+.ol-regular
+  margin-left 1rem
+  li
+    margin-bottom 1rem

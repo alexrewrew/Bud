@@ -1,0 +1,13 @@
+form {}
+
+.form-half-input
+  display flex
+  flex-wrap wrap
+  flex-direction row
+  justify-content space-between
+  input
+    flex 1 1 calc(50% - .5rem)
+    max-width calc(50% - .5rem)
+    +mobile()
+      flex 1 1 100%
+      max-width 100%

@@ -1,0 +1,41 @@
+.radiocheck
+  margin-bottom 1rem
+  position relative
+
+  input
+    position absolute
+    opacity 0
+
+  input + label
+    position relative
+    padding-left 20px
+    cursor pointer
+    &:before
+      pseudo(block, absolute)
+      top 2px
+      left 0
+      width 15px
+      height 15px
+      border 1px solid $black
+      opacity 1
+      transitions()
+    &:after
+      pseudo(block, absolute)
+      top 2px
+      left 0
+      width 15px
+      height 15px
+      background $gray
+      border 1px solid $gray
+      opacity 0
+      transitions()
+
+  input[type='radio'] + label
+    &:after, &:before
+      border-radius 50%
+
+  input:checked + label
+    &:before
+      opacity 0
+    &:after
+      opacity 1

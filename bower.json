@@ -1,0 +1,43 @@
+{
+  "name": "template",
+  "description": "volta gulp template",
+  "main": "index.js",
+  "authors": [
+    "alexrewrew"
+  ],
+  "directory": "app/libs",
+  "license": "ISC",
+  "homepage": "https://github.com/alexrewrew/template-stylus",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/libs",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "iCheck": "icheck#^1.0.2",
+    "font-awesome": "Font-Awesome#^4.7.0",
+    "normalize-css": "normalize.css#^7.0.0"
+  },
+  "devDependencies": {
+    "remodal": "^1.1.1",
+    "chosen": "^1.8.2",
+    "bootstrap": "v4.0.0-beta",
+    "magnific-popup": "^1.1.0",
+    "animate.css": "^3.5.2",
+    "wow": "wowjs#^1.1.2",
+    "modaal": "^0.3.1",
+    "jquery-ui": "^1.12.1",
+    "fullpage.js": "^2.9.5",
+    "chosen-image": "https://github.com/djgrant/chosen-image.git#^0.9.9",
+    "jquery.maskedinput": "^1.4.1",
+    "fancybox": "^3.1.25",
+    "ddscrollspy": "https://github.com/dynamicdriverepo/ddscrollspy.git#^1.2.0",
+    "slick-carousel": "^1.8.1",
+    "jquery-validation": "^1.17.0",
+    "font-awesome": "^4.7.0",
+    "flipclock": "FlipClock#^0.7.7"
+  }
+}

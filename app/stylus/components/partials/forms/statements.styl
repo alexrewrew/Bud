@@ -1,0 +1,18 @@
+@import '../../../utilities/vars'
+@import '../../../utilities/mixins'
+
+input[type='text'].error,
+input[type='password'].error,
+input[type='email'].error
+  border-color red
+  color red
+  +placeholder()
+    color red
+  &:focus
+    color inherit
+
+input[type='checkbox'].error + label
+  color red
+
+input[type='radio'].error + label
+  color red

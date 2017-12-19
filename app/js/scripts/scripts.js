@@ -42,6 +42,8 @@ $(document).ready(function () {
                     if (all > current) {
                         var diff = all - current;
 
+                        current = all;
+
                         for (var i = 0; i < diff; i++) {
                             clock.increment();
                         }

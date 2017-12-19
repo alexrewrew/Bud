@@ -2,34 +2,41 @@
 @import '../../utilities/mixins'
 
 h1
-  font(4.438rem, $white, bold, .68)
-  margin-bottom 3.625rem
+  font(3.50rem, $white, bold, 1)
+  margin-bottom 30px
   letter-spacing: 2.4px;
   text-align center
-
-  +tablet()
-    line-height 1
-    margin-bottom 3rem
-  +portrait()
-    line-height 1
-    margin-bottom 3rem
   +mobile()
-    font-size 2.5rem
-    line-height 1
-    margin-bottom 3rem
+    font-size 2.25rem
+    margin-bottom 30px
 
 
 h3
-  font(1.5rem, $white, 400, 1)
-  margin-bottom 3.5rem
+  font(1.25rem, $white, 400, 1)
+  margin-bottom 35px
   letter-spacing: 1.7px;
 
   text-align center
 
   text-transform uppercase
 
-  +portrait()
-    font-size: 1.25rem;
   +mobile()
+    margin-bottom 30px
+    font-size 1rem
     line-height 1.5
 
+p
+  font-size $s16
+  line-height: 1.5;
+  letter-spacing: 1px;
+  color $white
+  font-weight 400
+  font-family 'Gotham Pro', sans-serif
+  margin-bottom 25px
+  text-align center
+  +tablet()
+    font-size $s14
+  +portrait()
+    font-size $s14
+  +mobile()
+    font-size $s12

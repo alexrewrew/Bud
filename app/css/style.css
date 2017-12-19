@@ -1,3 +1,84 @@
+/* Ghotam Pro */
+
+/* normal */
+
+/* 100 */
+
+/* 200 */
+
+/* 300 */
+@font-face {
+	font-family: 'Gotham Pro';
+	src: url('../fonts/Gotham/GothamPro-Light.eot');
+	src: url('../fonts/Gotham/GothamPro-Light.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/Gotham/GothamPro-Light.woff') format('woff'),
+	url('../fonts/Gotham/GothamPro-Light.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}
+/* 400 */
+@font-face {
+	font-family: 'Gotham Pro';
+	src: url('../fonts/Gotham/GothamPro.eot');
+	src: url('../fonts/Gotham/GothamPro.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/Gotham/GothamPro.woff') format('woff'),
+	url('../fonts/Gotham/GothamPro.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+/* 500 */
+@font-face {
+	font-family: 'Gotham Pro';
+	src: url('../fonts/Gotham/GothamPro-Medium.eot');
+	src: url('../fonts/Gotham/GothamPro-Medium.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/Gotham/GothamPro-Medium.woff') format('woff'),
+	url('../fonts/Gotham/GothamPro-Medium.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+}
+/* 600 */
+
+/* 700 */
+@font-face {
+	font-family: 'Gotham Pro';
+	src: url('../fonts/Gotham/GothamPro-Bold.eot');
+	src: url('../fonts/Gotham/GothamPro-Bold.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/Gotham/GothamPro-Bold.woff') format('woff'),
+	url('../fonts/Gotham/GothamPro-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+/* 800 */
+
+/* 900 */
+@font-face {
+	font-family: 'Gotham Pro';
+	src: url('../fonts/Gotham/GothamPro-Black.eot');
+	src: url('../fonts/Gotham/GothamPro-Black.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/Gotham/GothamPro-Black.woff') format('woff'),
+	url('../fonts/Gotham/GothamPro-Black.ttf') format('truetype');
+	font-weight: 900;
+	font-style: normal;
+}
+/* italic */
+
+/* 100 */
+
+/* 200 */
+
+/* 300 */
+
+/* 400 */
+
+/* 500 */
+
+/* 600 */
+
+/* 700 */
+
+/* 800 */
+
+/* 900 */
 @font-face {
 	font-family: 'Bud';
 	font-weight: bold;
@@ -34,14 +115,9 @@ body {
 	-webkit-box-shadow: 0 7px 29px 0 rgba(0,0,0,.38);
 	        box-shadow: 0 7px 29px 0 rgba(0,0,0,.38);
 	border: solid 14px #fff;
-	margin: 51px 0 50px;
-	min-height: 243px;
+	margin: 35px 0;
+	min-height: 220px;
 	overflow: hidden;
-}
-@media (min-width: 992px) and (max-width: 1199px) {
-	.counter-block {
-		min-height: 230px;
-	}
 }
 @media (min-width: 768px) and (max-width: 991px) {
 	.counter-block {
@@ -51,6 +127,7 @@ body {
 @media (max-width: 767px) {
 	.counter-block {
 		min-height: 157px;
+		margin: 30px 0;
 	}
 }
 #counter {
@@ -62,12 +139,12 @@ body {
 	-webkit-justify-content: center;
 	-ms-flex-pack: center;
 	        justify-content: center;
-	-webkit-transform: scale(2.1);
-	    -ms-transform: scale(2.1);
-	        transform: scale(2.1);
+	-webkit-transform: scale(1.8);
+	    -ms-transform: scale(1.8);
+	        transform: scale(1.8);
 	position: relative;
 	left: -10px;
-	padding-top: 28px;
+	padding-top: 24px;
 }
 @media (min-width: 992px) and (max-width: 1199px) {
 	#counter {
@@ -97,7 +174,7 @@ body {
 	position: relative;
 }
 .flip-clock-wrapper ul:nth-child(3):after {
-	content: ',';
+	content: '.';
 	display: block;
 	position: absolute;
 	color: #fff;
@@ -124,6 +201,7 @@ body {
 .img-bud {
 	display: block;
 	margin: 0 auto;
+	width: 100%;
 }
 @media (min-width: 992px) and (max-width: 1199px) {
 	.img-bud {
@@ -198,52 +276,61 @@ body {
 }
 h1 {
 	font-family: 'Bud', sans-serif;
-	font-size: 4.438rem;
+	font-size: 3.5rem;
 	font-weight: bold;
 	color: #fff;
-	line-height: .68;
-	margin-bottom: 3.625rem;
+	line-height: 1;
+	margin-bottom: 30px;
 	letter-spacing: 2.4px;
 	text-align: center;
 }
-@media (min-width: 992px) and (max-width: 1199px) {
-	h1 {
-		line-height: 1;
-		margin-bottom: 3rem;
-	}
-}
-@media (min-width: 768px) and (max-width: 991px) {
-	h1 {
-		line-height: 1;
-		margin-bottom: 3rem;
-	}
-}
 @media (max-width: 767px) {
 	h1 {
-		font-size: 2.5rem;
-		line-height: 1;
-		margin-bottom: 3rem;
+		font-size: 2.25rem;
+		margin-bottom: 30px;
 	}
 }
 h3 {
 	font-family: 'Bud', sans-serif;
-	font-size: 1.5rem;
+	font-size: 1.25rem;
 	font-weight: 400;
 	color: #fff;
 	line-height: 1;
-	margin-bottom: 3.5rem;
+	margin-bottom: 35px;
 	letter-spacing: 1.7px;
 	text-align: center;
 	text-transform: uppercase;
 }
-@media (min-width: 768px) and (max-width: 991px) {
+@media (max-width: 767px) {
 	h3 {
-		font-size: 1.25rem;
+		margin-bottom: 30px;
+		font-size: 1rem;
+		line-height: 1.5;
+	}
+}
+p {
+	font-size: 1rem;
+	line-height: 1.5;
+	letter-spacing: 1px;
+	color: #fff;
+	font-weight: 400;
+	font-family: 'Gotham Pro', sans-serif;
+	margin-bottom: 25px;
+	text-align: center;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+	p {
+		font-size: .875rem;
+	}
+}
+@media (min-width: 768px) and (max-width: 991px) {
+	p {
+		font-size: .875rem;
 	}
 }
 @media (max-width: 767px) {
-	h3 {
-		line-height: 1.5;
+	p {
+		font-size: .75rem;
 	}
 }
 a {
@@ -308,11 +395,11 @@ button:focus {
 	color: #000;
 	padding-top: 16px;
 	padding-bottom: 16px;
-	font-size: 1.25rem;
+	font-size: 1.125rem;
 	font-weight: bold;
 	line-height: .8;
 	letter-spacing: 1.3px;
-	margin: 0 auto;
+	margin: 0 auto 0;
 }
 .button:hover {
 	color: #000;
@@ -396,11 +483,11 @@ main {
 	-ms-flex-align: center;
 	        align-items: center;
 	min-height: 100vh;
-	padding: 20px 0;
 }
 @media (max-width: 767px) {
 	main {
 		position: relative;
 		z-index: 100;
+		padding: 30px 0;
 	}
 }

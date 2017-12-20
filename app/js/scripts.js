@@ -9,6 +9,11 @@ $(document).ready(function () {
         clock,
         current = 0;
 
+    FB.init({
+        appId: '2253326001359487',
+        version: 'v2.3'
+    });
+
     $.ajax({
         type: "POST",
         data: {},
@@ -58,37 +63,29 @@ $(document).ready(function () {
     }, 15000);
 
     $(".button").on('click', function (event) {
-        event.preventDefault();
+        FB.ui({
+                method: 'share',
+                mobile_iframe: false,
+                display: 'popup',
+                href: window.location.href,
+            },
+            function (response) {
+                if (response && !response.error_code) {
+                    clock.increment();
 
-        $.ajaxSetup({cache: true});
-        $.getScript('//connect.facebook.net/uk_UA/sdk.js', function () {
-            FB.init({
-                appId: '2253326001359487',
-                version: 'v2.3'
+                    current++;
+
+                    $.ajax({
+                        type: "GET",
+                        data: {},
+                        url: url,
+                        dataType: "json",
+                        success: function () {
+                            //success function
+                        }
+                    });
+                }
             });
-            FB.ui({
-                    method: 'share',
-                    title: 'Я СВЯТКУЮ ВІДПОВІДАЛЬНО',
-                    description: '#СВЯТКУЙНЕРУЛЮЙ #СВЯТКУЙВІДПОВІДАЛЬНО #ВДОМАЧЕКАЮТЬ',
-                    href: window.location.href,
-                },
-                function (response) {
-                    if (response && !response.error_code) {
-                        clock.increment();
-
-                        current++;
-
-                        $.ajax({
-                            type: "GET",
-                            data: {},
-                            url: url,
-                            dataType: "json",
-                            success: function () {
-                                //success function
-                            }
-                        });
-                    }
-                });
-        });
+        event.preventDefault();
     });
 });

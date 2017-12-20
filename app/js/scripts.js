@@ -21,6 +21,7 @@ $(document).ready(function () {
         dataType: "json",
         success: function (data) {
             if (data) {
+                $('.loader').css('opacity', '0');
                 var real = data['Реальна кількість'],
                     total = data['Додана кількість'],
                     all = real + total;

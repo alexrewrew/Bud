@@ -238,6 +238,16 @@ body {
 	-webkit-justify-content: center;
 	-ms-flex-pack: center;
 	        justify-content: center;
+	-webkit-transition: all .4s ease;
+	     -o-transition: all .4s ease;
+	        transition: all .4s ease;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#4f4f4f), to(#000));
+	background-image: -webkit-linear-gradient(top, #4f4f4f, #000);
+	background-image:      -o-linear-gradient(top, #4f4f4f, #000);
+	background-image:         linear-gradient(to bottom, #4f4f4f, #000);
+}
+.loader svg rect, .loader svg path {
+	fill: #fff;
 }
 .text-justify {
 	text-align: justify !important;
